@@ -2,7 +2,7 @@
 Scripts for saving and restoring Linux window layouts
 
 ## Usage:
-1. Prepare file `save-windows.sh`: Check and if necessary modify the number of monitors(=screens)
+1. Prepare file `save-windows.sh`: Check and if necessary modify the number of monitors(=screens).
 in variable `_NUM_SCREENS_DEFAULT`
 2. Run this script via cron in an interval of your choice, e.g. every 5 minutes:
 
