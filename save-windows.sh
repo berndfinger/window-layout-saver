@@ -37,5 +37,5 @@ _NUM_GEOMETRY_FILES=$(ls ${_GEOMETRY_DIR}/geometry-*.txt | wc -l)
 # Leave only the last 20 files in place:
 if [[ ${_NUM_GEOMETRY_FILES} -gt 20 ]]; then
    (( _NUM_FILES_TO_DELETE = _NUM_GEOMETRY_FILES - 20 ))
-   ls -1tr ${_GEOMETRY_DIR}/geometry-*.txt | head -${_NUM_FILES_TO_DELETE} | xargs -I rm {}
+   ls -1tr ${_GEOMETRY_DIR}/geometry-*.txt | head -${_NUM_FILES_TO_DELETE} | xargs rm
 fi
